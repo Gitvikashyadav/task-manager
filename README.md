@@ -89,39 +89,7 @@ The app uses **JWT-based authentication** with access + refresh token rotation, 
 
 ---
 
-## 🛠 Tech Stack
 
-### Frontend
-| Technology | Version | Purpose |
-|-----------|---------|---------|
-| React.js | 18.3 | UI framework |
-| Vite | 5.3 | Build tool & dev server |
-| Tailwind CSS | 3.4 | Utility-first styling |
-| React Router v6 | 6.24 | Client-side routing |
-| Axios | 1.7 | HTTP client with interceptors |
-| Lucide React | 0.383 | Icon library |
-| React Hot Toast | 2.4 | Toast notifications |
-
-### Backend
-| Technology | Version | Purpose |
-|-----------|---------|---------|
-| Node.js | 18+ | Runtime environment |
-| Express.js | 4.19 | Web framework |
-| Mongoose | 8.4 | MongoDB ODM |
-| JSON Web Token | 9.0 | Authentication |
-| bcryptjs | 2.4 | Password hashing |
-| Helmet | 7.1 | HTTP security headers |
-| CORS | 2.8 | Cross-origin control |
-| Morgan | 1.10 | HTTP request logger |
-| express-rate-limit | 7.3 | API rate limiting |
-| cookie-parser | 1.4 | Cookie reading middleware |
-
-### Database
-| Technology | Purpose |
-|-----------|---------|
-| MongoDB Atlas | Cloud-hosted NoSQL database |
-
----
 
 ## 📁 Folder Structure backend
 
@@ -305,11 +273,10 @@ Visit [http://localhost:5173](http://localhost:5173) — register an account and
 |----------|-------------|---------|
 | `VITE_API_URL` | Backend API base URL | `http://localhost:5000/api` |
 
-> ⚠️ **Never commit your `.env` file to GitHub.** It's already in `.gitignore`.
 
 ---
 
-## 📡 API Reference
+##  API Reference
 
 ### Base URL
 ```
@@ -323,9 +290,9 @@ Production:  https://your-backend.onrender.com/api
 |--------|----------|------|-------------|
 | `POST` | `/auth/register` | ❌ | Register new user |
 | `POST` | `/auth/login` | ❌ | Login and get tokens |
-| `POST` | `/auth/refresh` | 🍪 Cookie | Refresh access token |
-| `POST` | `/auth/logout` | ✅ Bearer | Logout and clear cookie |
-| `GET` | `/auth/me` | ✅ Bearer | Get current user profile |
+| `POST` | `/auth/refresh` |  Cookie | Refresh access token |
+| `POST` | `/auth/logout` |  Bearer | Logout and clear cookie |
+| `GET` | `/auth/me` |  Bearer | Get current user profile |
 
 ### Task Routes (all require Bearer token)
 
