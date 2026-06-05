@@ -402,48 +402,6 @@ Error responses:
 4. Add environment variable:
    - `VITE_API_URL` = `https://your-backend.onrender.com/api`
 
-### ⚠️ Common Deployment Issue
-
-> **CORS Error after deployment?**
->
-> Go to Render backend → Environment tab → Update `CLIENT_URL` to your exact frontend URL.
-> The value must match **exactly** — no trailing slash.
->
-> ```
-> ✅  https://task-manager-frontend-reum.onrender.com
-> ❌  https://task-manager-frontend-reum.onrender.com/
-> ```
-
----
-
-## 🗄️ Database Schema
-
-### User
-```javascript
-{
-  name:         String,   // required, 2-50 chars
-  email:        String,   // required, unique, lowercase
-  password:     String,   // required, hashed with bcrypt (12 rounds)
-  refreshToken: String,   // stored for refresh token rotation
-  avatar:       String,   // optional profile image URL
-  createdAt:    Date,
-  updatedAt:    Date
-}
-```
-
-### Task
-```javascript
-{
-  title:       String,    // required, max 100 chars
-  description: String,    // optional, max 500 chars
-  status:      String,    // enum: 'pending' | 'in-progress' | 'completed'
-  priority:    String,    // enum: 'low' | 'medium' | 'high'
-  dueDate:     Date,      // optional
-  userId:      ObjectId,  // ref: User (indexed)
-  createdAt:   Date,
-  updatedAt:   Date
-}
-```
 
 ---
 
@@ -467,17 +425,8 @@ Error responses:
 7. User never gets logged out (seamless experience)
 ```
 
----
 
-## 📸 Screenshots
 
-| Login Page | Dashboard |
-|-----------|-----------|
-| ![Login](https://via.placeholder.com/400x250/111827/38bdf8?text=Login+Page) | ![Dashboard](https://via.placeholder.com/400x250/111827/38bdf8?text=Dashboard) |
-
-| Task Modal | Mobile View |
-|-----------|-------------|
-| ![Modal](https://via.placeholder.com/400x250/111827/38bdf8?text=Task+Modal) | ![Mobile](https://via.placeholder.com/400x250/111827/38bdf8?text=Mobile+View) |
 
 ---
 
@@ -493,9 +442,7 @@ Contributions are welcome!
 
 ---
 
-## 📄 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
@@ -503,14 +450,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 **Vikash Kumar**
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourusername)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gitvikashyadav)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vikashrj/)
 
 ---
 
 <div align="center">
 
-Made with ❤️ as part of MERN Stack Internship Assignment
 
 ⭐ Star this repo if you found it helpful!
 
