@@ -12,9 +12,9 @@ Built with **MongoDB · Express.js · React.js · Node.js**
 [![TailwindCSS](https://img.shields.io/badge/Tailwind-3.4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-[Live Demo](https://task-manager-frontend-reum.onrender.com) · [Backend API](https://task-manager-backend-mmwj.onrender.com/api/health) · [Report Bug](https://github.com/yourusername/taskflow/issues) · [Request Feature](https://github.com/yourusername/taskflow/issues)
+ · [Backend API](https://task-manager-backend-mmwj.onrender.com/api/health) ·
 
-![TaskFlow Banner](https://via.placeholder.com/900x400/111827/38bdf8?text=TaskFlow+—+Manage+Your+Work)
+
 
 </div>
 
