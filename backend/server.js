@@ -6,10 +6,10 @@ import morgan from 'morgan';
 import cookieParser from 'cookie-parser';
 import rateLimit from 'express-rate-limit';
 
-// import connectDB from './src/config/db.js';
-// import authRoutes from './src/routes/authRoutes.js';
-// import taskRoutes from './src/routes/taskRoutes.js';
-// import { notFound, errorHandler } from './src/middleware/errorMiddleware.js';
+import connectDB from './src/config/db.js';
+import authRoutes from './src/routes/authRoutes.js';
+import taskRoutes from './src/routes/taskRoutes.js';
+import { notFound, errorHandler } from './src/middleware/errorMiddleware.js';
 
 dotenv.config();
 
