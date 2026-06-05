@@ -35,7 +35,7 @@ Built with **MongoDB · Express.js · React.js · Node.js**
 
 ---
 
-## 🚀 About The Project
+##  About The Project
 
 TaskFlow is a production-ready, full-stack task management web application built as part of a MERN Stack internship assignment. It allows users to register, log in, and manage their personal tasks with full CRUD operations, search, filtering, and pagination — all wrapped in a modern dark-themed UI.
 
@@ -46,25 +46,25 @@ The app uses **JWT-based authentication** with access + refresh token rotation, 
 ## ✨ Features
 
 ### Authentication
-- ✅ User registration with validation
-- ✅ Secure login with JWT (Access Token + Refresh Token)
-- ✅ Refresh token stored in httpOnly cookie (XSS-safe)
-- ✅ Auto-refresh access token on expiry (silent, no logout)
-- ✅ Logout clears token from DB and cookie
+-  User registration with validation
+-  Secure login with JWT (Access Token + Refresh Token)
+-  Refresh token stored in httpOnly cookie (XSS-safe)
+-  Auto-refresh access token on expiry (silent, no logout)
+-  Logout clears token from DB and cookie
 
 ### Task Management
-- ✅ Create tasks with title, description, priority, status, due date
-- ✅ Edit any task inline via modal
-- ✅ Delete individual tasks with confirmation dialog
-- ✅ Toggle task status: `Pending → In Progress → Completed`
-- ✅ Bulk delete all completed tasks
-- ✅ Overdue task detection (red due date badge)
+-  Create tasks with title, description, priority, status, due date
+-  Edit any task inline via modal
+-  Delete individual tasks with confirmation dialog
+-  Toggle task status: `Pending → In Progress → Completed`
+-  Bulk delete all completed tasks
+-  Overdue task detection (red due date badge)
 
 ### Search, Filter & Sort
-- ✅ Debounced full-text search (title + description)
-- ✅ Filter by status (Pending / In Progress / Completed)
-- ✅ Filter by priority (Low / Medium / High)
-- ✅ Sort by Newest, Oldest, Title A–Z, Due Date
+-  Debounced full-text search (title + description)
+-  Filter by status (Pending / In Progress / Completed)
+-  Filter by priority (Low / Medium / High)
+-  Sort by Newest, Oldest, Title A–Z, Due Date
 
 ### Dashboard
 - ✅ Live stats (Total, Pending, In Progress, Completed)
@@ -123,7 +123,7 @@ The app uses **JWT-based authentication** with access + refresh token rotation, 
 
 ---
 
-## 📁 Folder Structure
+## 📁 Folder Structure backend
 
 ```
 taskflow/
@@ -155,8 +155,11 @@ taskflow/
 │   ├── 📄 server.js                    # App entry point
 │   ├── 📄 .env                         # Environment variables
 │   └── 📄 package.json
-│
-└── 📂 frontend/                        # React + Vite + Tailwind
+```
+
+## 📁 Folder Structure frontend
+```
+ 📂 frontend/                        # React + Vite + Tailwind
     ├── 📂 src/
     │   ├── 📂 api/                     # Axios API functions
     │   │   ├── 📄 authApi.js           # register, login, logout, getMe, refresh
