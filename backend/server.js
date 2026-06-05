@@ -15,17 +15,17 @@ dotenv.config();
 
 const app = express();
 
-// Connect Database
-connectDB();
 
 // Security Middleware
-app.use(helmet());
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173'||'https://task-manager-frontend-reum.onrender.com',
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+    origin: process.env.CLIENT_URL || 'http://localhost:5173'||'https://task-manager-frontend-reum.onrender.com',
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
 }));
+app.use(helmet());
+// Connect Database
+connectDB();
 
 // Rate Limiting
 const limiter = rateLimit({
@@ -36,7 +36,7 @@ const limiter = rateLimit({
 app.use('/api/', limiter);
 
 // Body Parsing
-app.use(express.json({ limit: '10kb' }));
+app.use(express.json({ limit: '30kb' }));
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
