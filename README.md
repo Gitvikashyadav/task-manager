@@ -30,7 +30,6 @@ Built with **MongoDB · Express.js · React.js · Node.js**
 - [Environment Variables](#-environment-variables)
 - [API Reference](#-api-reference)
 - [Deployment](#-deployment)
-- [Screenshots](#-screenshots)
 - [Contributing](#-contributing)
 
 ---
