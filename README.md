@@ -41,6 +41,14 @@ TaskFlow is a production-ready, full-stack task management web application built
 The app uses **JWT-based authentication** with access + refresh token rotation, stores the refresh token in an **httpOnly cookie** for security, and communicates via a fully RESTful API with proper error handling at every layer.
 
 ---
+## Live Demo
+
+### Frontend URL
+🔗[ https://your-frontend-url.vercel.app](https://task-manager-frontend-reum.onrender.com)
+
+### Backend URL
+🔗 [https://your-backend-url.onrender.com](https://task-manager-backend-mmwj.onrender.com)
+
 
 ## ✨ Features
 
@@ -245,11 +253,7 @@ npm run dev
 # App runs on http://localhost:5173
 ```
 
-**4. Open the app**
 
-Visit [http://localhost:5173](http://localhost:5173) — register an account and start managing tasks!
-
----
 
 ## 🔐 Environment Variables
 
